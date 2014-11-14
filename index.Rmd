@@ -1,8 +1,8 @@
 ---
-title       : my first slidify
-subtitle    : an easy attempt
-author      : cling
-job         : pre_retired engineer
+title       : Mpg versus AM
+subtitle    : an easy attempt to choose a car
+author      : ClaudioI
+job         : Coursera student
 logo        : loype.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -15,21 +15,28 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Summary
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+This short presentation aims at describing the Shiny Application made a project for 
+the 
+
+
+
 
 --- .class #id 
 
-## Slide 2 `index.Rmd` : `YAML`
+## Background
 
 
-```r
-# setwd("~/sample/project/")
+
+```[r, echo ] 
+
 
 ```
 
-questa e' `prima`  vera slide
+--- .class #id 
+
+## Apps description
+
+
 
