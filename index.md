@@ -36,7 +36,7 @@ The result of the Regression Course project is not here. You can bet your soluti
 
 The data, included in  `mtcars`, was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
 
-the first records of the dataset are
+The first records of the dataset are:
 
 
 ```
