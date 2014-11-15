@@ -36,7 +36,7 @@
   </aside>
   <hgroup class="auto-fadein">
     <h1>Mpg versus AM</h1>
-    <h2>an easy attempt to choose a car</h2>
+    <h2>An easy attempt to choose a car</h2>
     <p>ClaudioI<br/>Coursera student</p>
   </hgroup>
   <article></article>  
@@ -49,8 +49,17 @@
     <h2>Summary</h2>
   </hgroup>
   <article data-timings="">
-    <p>This short presentation aims at describing the Shiny Application made a project for 
-the </p>
+    <p>This short presentation aims at describing the Shiny Application I made as a project for 
+the Coursera <strong>Developing Data Products</strong> course.</p>
+
+<p>The Project Assignment states &quot; get 5 slides (inclusive of the title slide)  to pitch a your app.&quot;</p>
+
+<p>My App produces some plots using the <code>mtcars</code>, a famous dataset included in the Package <code>datasets</code>. </p>
+
+<p>The idea of using  <code>mtcars</code> relates with a previuos Coursera course: Regression Models.
+In this course I was asked to make a project responding to &quot;<em>Is an automatic or manual transmission better for MPG</em>&quot;</p>
+
+<p>The result of the Regression Course project is not here. You can bet your solution.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -61,9 +70,20 @@ the </p>
     <h2>Background</h2>
   </hgroup>
   <article data-timings="">
-    <p>```[r, echo ] </p>
+    <p>The data, included in  <code>mtcars</code>, was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).</p>
 
-<pre><code></code></pre>
+<p>the first records of the dataset are</p>
+
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre>
+
+<p>The <code>mpg</code> has a quite normal distribution. In <code>am</code> automatic occurs 19, manual 13.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -74,7 +94,27 @@ the </p>
     <h2>Apps description</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>The App is made of two panels:</p>
+
+<p><code>About</code> where you could find a basic documentation of what the app is about.  </p>
+
+<p><code>Plot</code> where you could choose between three different plots. Each one shows how <code>mpg</code> is related with three key predictors available in the dataset.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Plot operation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Please select a variable to be shown in relationship with mpg. </p>
+
+<p>The different shape of the points outlines the number of cylinders; the colour of the points says the transmission type .</p>
+
+<p>You can choose if you want to  show also the trend line.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -99,6 +139,12 @@ the </p>
       <a href="#" target="_self" rel='tooltip' 
         data-slide=3 title='Apps description'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plot operation'>
+         4
       </a>
     </li>
   </ul>

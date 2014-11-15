@@ -1,15 +1,12 @@
 ---
 title       : Mpg versus AM
-subtitle    : an easy attempt to choose a car
+subtitle    : An easy attempt to choose a car
 author      : ClaudioI
 job         : Coursera student
 logo        : loype.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-#url:
-#  lib: ../../libraries
-#  assets: ../../assets
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
@@ -17,9 +14,18 @@ knit        : slidify::knit2slides
 
 ## Summary
 
-This short presentation aims at describing the Shiny Application made a project for 
-the 
+This short presentation aims at describing the Shiny Application I made as a project for 
+the Coursera **Developing Data Products** course.
 
+
+The Project Assignment states " get 5 slides (inclusive of the title slide)  to pitch a your app."
+
+My App produces some plots using the `mtcars`, a famous dataset included in the Package `datasets`. 
+
+The idea of using  `mtcars` relates with a previuos Coursera course: Regression Models.
+In this course I was asked to make a project responding to "*Is an automatic or manual transmission better for MPG*"
+
+The result of the Regression Course project is not here. You can bet your solution.
 
 
 
@@ -28,15 +34,39 @@ the
 ## Background
 
 
+The data, included in  `mtcars`, was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
 
-```[r, echo ] 
+The first records of the dataset are:
 
+```{r strcars,  echo = F}
 
+head (mtcars)
+tam<-table(mtcars$am)
 ```
+
+The `mpg` has a quite normal distribution. In `am` automatic occurs `r tam[1]`, manual `r tam[2]`.
 
 --- .class #id 
 
 ## Apps description
+
+The App is made of two panels:
+
+`About` where you could find a basic documentation of what the app is about.  
+
+`Plot` where you could choose between three different plots. Each one shows how `mpg` is related with three key predictors available in the dataset.
+
+
+--- .class #id 
+
+## Plot operation 
+
+
+Please select a variable to be shown in relationship with mpg. 
+
+The different shape of the points outlines the number of cylinders; the colour of the points says the transmission type .
+
+You can choose if you want to  show also the trend line.
 
 
 
