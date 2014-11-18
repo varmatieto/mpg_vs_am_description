@@ -18,7 +18,7 @@ This short presentation aims at describing the Shiny Application I made as a pro
 the Coursera **Developing Data Products** course.
 
 
-The Project Assignment states " get 5 slides (inclusive of the title slide)  to pitch a your app."
+The Project Assignment states: " get 5 slides (inclusive of the title slide) to pitch your App."
 
 My App produces some plots using the `mtcars`, a famous dataset included in the Package `datasets`. 
 
@@ -54,19 +54,27 @@ The App is made of two panels:
 
 `About` where you could find a basic documentation of what the app is about.  
 
-`Plot` where you could choose between three different plots. Each one shows how `mpg` is related with three key predictors available in the dataset.
+`Plot` where you could choose between three different Scatterplot. Each one shows how `mpg` is related with three key predictors available in the dataset.
 
 
 --- .class #id 
 
-## Plot operation 
+## Scatterplot operation 
 
 
-Please select a variable to be shown in relationship with mpg. 
+Please select a variable to be shown in relationship with `mpg`:
+
+- `wt` Weight in lb/1000
+
+- `disp` Displacement in cu.in.
+
+- `hp` Gross horsepower
 
 The different shape of the points outlines the number of cylinders; the colour of the points says the transmission type .
 
 You can choose if you want to  show also the trend line.
+
+The three scatterplots suggest how `mpg` is related with `am`.
 
 
 
